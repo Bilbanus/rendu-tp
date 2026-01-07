@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Bannière – La Mort de Satoru Gojo</title>
+<style>
+body{
+    background:#050505;
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+    font-family:'Arial',sans-serif;
+}
+
+.banner{
+    width:728px;
+    height:90px;
+    position:relative;
+    overflow:hidden;
+    background: linear-gradient(90deg, #4b0000 0%, #000000 50%, #00004b 100%);
+    border:3px solid #ffffff;
+    box-shadow: inset 30px 0 40px rgba(255, 0, 0, 0.5), 
+                inset -30px 0 40px rgba(0, 0, 255, 0.5);
+}
+
+.void{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:radial-gradient(circle at center, rgba(147, 51, 234, 0.2), transparent 70%);
+    animation:voidPulse 3s ease-in-out infinite;
+}
+
+@keyframes voidPulse{
+    0%,100%{opacity:0.4;}
+    50%{opacity:0.8;}
+}
+
+/* Texte centré verticalement */
+.text{
+    position:absolute;
+    left:30px;
+    /* On place le haut à 50% de la hauteur */
+    top:50%;
+    /* On remonte de 50% de sa propre hauteur pour centrer parfaitement */
+    transform: translateY(-50%);
+    font-size:24px;
+    font-weight:bold;
+    color:#ffffff;
+    opacity:0;
+    text-shadow:0 0 10px rgba(255,255,255,0.6);
+    /* Fusion des animations : apparition + maintien du centrage */
+    animation:textAppear 2s forwards 0.5s;
+    z-index: 2;
+}
+
+@keyframes textAppear{
+    from { opacity: 0; transform: translateY(-50%) translateX(-10px); }
+    to { opacity: 1; transform: translateY(-50%) translateX(0); }
+}
+
+.image{
+    position:absolute;
+    right:0;
+    top:0;
+    height:90px;
+    animation:fadeOut 5s ease-in forwards 2s;
+    z-index: 1;
+}
+
+@keyframes fadeOut{
+    to{opacity:0; transform: scale(1.05); filter: blur(5px);}
+}
+
+</style>
+</head>
+<body>
+    <div class="banner">
+        <div class="void"></div>
+        <div class="text">Satoru Gojo — The Fallen Strongest</div>
+        <img class="image" src="https://preview.redd.it/gojos-death-in-hindsight-v0-34mmdb3oo42d1.png?auto=webp&s=69196b5b66e4ff58cfdbae5caec635fad4be07a5" alt="Gojo">
+    </div>
+</body>
+</html>

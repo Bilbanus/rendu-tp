@@ -1,11 +1,11 @@
 :root {
-    --bg-dark: #0f071a;           /* Fond très sombre */
-    --bg-card: #1a0b2e;           /* Fond des cartes */
-    --primary: #8b5cf6;           /* Violet éclatant */
-    --primary-hover: #a78bfa;     /* Violet clair */
-    --text-main: #f5f3ff;         /* Blanc cassé */
-    --text-muted: #a78bfa;       /* Violet pastel pour les textes secondaires */
-    --accent: #d946ef;            /* Rose/Fuchsia pour le contraste */
+    --bg-dark: #0f071a;
+    --bg-card: #1a0b2e;
+    --primary: #8b5cf6;
+    --primary-hover: #a78bfa;
+    --text-main: #f5f3ff;
+    --text-muted: #a78bfa;
+    --accent: #d946ef;
     --glass: rgba(26, 11, 46, 0.9);
 }
 
@@ -22,7 +22,6 @@ body {
     line-height: 1.6;
 }
 
-/* --- Navigation --- */
 nav {
     display: flex;
     justify-content: space-between;
@@ -35,8 +34,6 @@ nav {
     z-index: 1000;
     border-bottom: 1px solid rgba(139, 92, 246, 0.2);
 }
-
-
 
 nav ul {
     display: flex;
@@ -54,7 +51,6 @@ nav a:hover {
     color: var(--primary);
 }
 
-/* --- Page Accueil (Index) --- */
 #home {
     height: 90vh;
     display: flex;
@@ -81,7 +77,6 @@ nav a:hover {
     margin-bottom: 2.5rem;
 }
 
-/* --- Boutons --- */
 .btn-main, .btn-open-modal {
     padding: 12px 35px;
     background: linear-gradient(135deg, var(--primary), var(--accent));
@@ -99,7 +94,6 @@ nav a:hover {
     box-shadow: 0 6px 20px rgba(139, 92, 246, 0.6);
 }
 
-/* --- Grille des TP --- */
 #tp-page {
     padding: 60px 10%;
 }
@@ -117,7 +111,6 @@ h2 {
     gap: 30px;
 }
 
-/* --- Cards --- */
 .tp-card {
     background: var(--bg-card);
     border: 1px solid rgba(139, 92, 246, 0.2);
@@ -141,7 +134,6 @@ h2 {
     color: #fff;
 }
 
-/* --- Modale --- */
 .modal {
     display: none;
     position: fixed;

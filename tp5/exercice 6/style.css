@@ -1,0 +1,37 @@
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Sections parallax */
+        .parallax {
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .bg1 {
+            background-image: url("https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/481103642_690867290200460_3381058154232754390_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4UYCoCrasp8Q7kNvwGyxDM8&_nc_oc=AdmRmjUzbZY8w12OO1wamc2fk1HJhyvF79n1dQbf3nOUkxHHM0ttNuAtAak27R988U8&_nc_zt=23&_nc_ht=scontent-cdg4-2.xx&_nc_gid=xGdr4-cLQqhooTHP7GJs8w&oh=00_AfqI4f9Ek98uHy0uGm7hnFToPOQgphgBypG3IyouLxDMfw&oe=6963EFCE");
+        }
+
+        .bg2 {
+            background-image: url("https://uploads.dailydot.com/2024/08/01-Chapter-236-fist-panel-gojo-death-jujutsu-Kaisen.png?auto=compress&fm=png");
+        }
+
+        /* Contenu texte */
+        .content {
+            padding: 60px;
+            background: #f4f4f4;
+        }
+
+        h2 {
+            text-align: center;
+        }
